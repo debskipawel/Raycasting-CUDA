@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{1864dc0d-9f05-4207-b522-ba55a5eabf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4702b602-0dad-4816-a06c-3f0c22798019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCUDA">
+      <UniqueIdentifier>{04ef27cf-0d59-403b-a8d4-c9474fc8359d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeadersCUDA">
+      <UniqueIdentifier>{fe030f67-6f6a-474a-8101-342164fe4cb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphicsKernels.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cudaRayOperations.cuh">
+      <Filter>HeadersCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cudaCameraRayOperations.cuh">
+      <Filter>HeadersCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="dataGeneration.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="dataModifying.cuh">
+      <Filter>HeadersCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hitReport.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="graphicsKernels.cu">
+      <Filter>SourceCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cudaRayOperations.cu">
+      <Filter>SourceCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cudaCameraRayOperations.cu">
+      <Filter>SourceCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="dataModifying.cu">
+      <Filter>SourceCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="dataGeneration.cu">
+      <Filter>SourceCUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
